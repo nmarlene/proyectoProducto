@@ -1,0 +1,21 @@
+@media (min-width: 614px) {
+  .container {
+    flex-direction: row;
+    max-width: 600px;
+    width: 600px;
+  }
+  img {
+    height: 360px;
+    border-radius: 10px 0 0 10px;
+  }
+  .contend {
+    margin: 0 auto;
+    padding: 3px 10px 15px 12px;
+  }
+}
+.price {
+  margin: 18px 50px;
+}
+button {
+  padding: 15px 75px;
+}

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --cyan: #3c8067;
+  --cream: #f2ebe3;
+  --darkblue: #1c232b;
+  --grayishblue: #6c7289;
+  --white: #ffffff;
+}
+body {
+  margin: 100px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+}
+.container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.contend {
+  margin: 20px;
+  padding: 2px 2px 15px 12px;
+}
+
+img {
+  background-size: cover;
+  height: 340px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 550ms ease;
+}
+img:hover {
+  filter: grayscale(0%) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+#title {
+  color: var(--grayishblue);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  margin-bottom: 10px;
+}
+h2 {
+  font-family: Fraunces;
+  font-size: 2.3rem;
+}
+#parrafo {
+  margin-top: 30px;
+  color: var(--grayishblue);
+  font-size: 1.3rem;
+  font-family: Montserrat;
+  text-align: start;
+}
+
+.price {
+  margin: 18px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+#price1 {
+  font-family: Fraunces;
+  font-size: 2.5rem;
+  color: var(--cyan);
+  margin-left: 4px;
+}
+#price2 {
+  font-family: Montserrat;
+  color: var(--grayishblue);
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}
+#carrito {
+  margin-left: -20px;
+  display: inline-block;
+  background-image: url("/Imagenes/icon-cart.svg");
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+button {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  background: var(--cyan);
+  border: var(--cyan);
+  border-radius: 9px;
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 8% 30%;
+}
+button:focus {
+  box-shadow: 0 1px 5px #17a34b;
+}
